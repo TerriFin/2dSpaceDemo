@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Faction1
+  - Faction2
+  - Faction3
+  - Faction4
+  - Asteroid
+  - FactionsManager
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Projectiles
+  - Military
+  - Minimap
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Planets
+    uniqueID: 41399801
+    locked: 0
+  - name: Structures
+    uniqueID: 2245847517
+    locked: 0
+  - name: Ships
+    uniqueID: 1646659257
+    locked: 0
+  - name: MilitaryShips
+    uniqueID: 3909317271
+    locked: 0
+  - name: CargoBars
+    uniqueID: 852987885
+    locked: 0
+  - name: HealthBars
+    uniqueID: 2171518391
+    locked: 0
+  - name: Projectiles
+    uniqueID: 1195383413
+    locked: 0
+  - name: 
+    uniqueID: 3685654025
+    locked: 0
+  - name: 
+    uniqueID: 3404842709
+    locked: 0
