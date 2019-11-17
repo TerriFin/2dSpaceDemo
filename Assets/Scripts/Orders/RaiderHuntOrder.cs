@@ -42,7 +42,6 @@ public class RaiderHuntOrder : MonoBehaviour, Order {
     }
 
     private Ship getRandomEnemyCivilian() {
-        Ship current = null;
         HashSet<string> factionsAtWarWith = RelationshipManager.GetFactionsFactionIsAtWarWith(tag);
 
         string factionTag = null;
@@ -52,12 +51,11 @@ public class RaiderHuntOrder : MonoBehaviour, Order {
             }
         }
 
-        foreach (Ship ship in ShipsManager.factionCivilianShips[factionTag]) {
-            if (current == null || Random.value > 0.4f) {
-                current = ship;
-            }
+        if (ShipsManager.factionCivilianShips[factionTag].Count == 0) {
+            return null;
+            
         }
 
-        return current;
+        return ShipsManager.factionCivilianShips[factionTag][Random.Range(0, ShipsManager.factionCivilianShips[factionTag].Count)];
     }
 }

@@ -43,6 +43,6 @@ public class PatrolShipsOrder : MonoBehaviour, Order {
             return null;
         }
 
-        return ShipsManager.factionCivilianShips[aiAttributes.AttachedShip.tag][Random.Range(0, ShipsManager.factionCivilianShips[aiAttributes.AttachedShip.tag].Count - 1)];
+        return ShipsManager.factionCivilianShips[aiAttributes.AttachedShip.tag][Random.Range(0, ShipsManager.factionCivilianShips[aiAttributes.AttachedShip.tag].Count)];
     }
 }

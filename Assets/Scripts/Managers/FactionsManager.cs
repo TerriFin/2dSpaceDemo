@@ -11,7 +11,7 @@ public class FactionsManager : MonoBehaviour {
         factions = new Dictionary<string, Faction>();
         playerFaction = null;
 
-        Faction[] factionsData = GameObject.FindGameObjectWithTag("FactionsManager").GetComponents<Faction>();
+        Faction[] factionsData = GameObject.FindGameObjectWithTag("FactionManager").GetComponents<Faction>();
 
         for (int i = 0; i < factionsData.Length; i++) {
             print("CREATED FACTION " + factionsData[i].factionTag);

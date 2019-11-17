@@ -43,6 +43,6 @@ public class PatrolBuildingsOrder : MonoBehaviour, Order {
             return null;
         }
 
-        return BuildingsManager.factionBuildings[aiAttributes.AttachedShip.tag][Random.Range(0, BuildingsManager.factionBuildings[aiAttributes.AttachedShip.tag].Count - 1)];
+        return BuildingsManager.factionBuildings[aiAttributes.AttachedShip.tag][Random.Range(0, BuildingsManager.factionBuildings[aiAttributes.AttachedShip.tag].Count)];
     }
 }

@@ -282,8 +282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preferredCombatDistance: 1.8
   fleeDistance: 3
-  minWaitingTimeAtTarget: 0
-  maxWaitingTimeAtTarget: 0
+  minWaitingTimeAtTarget: 16
+  maxWaitingTimeAtTarget: 28
   patrolPreferenceForBuildings: 0.1
   distanceToBuildingModifier: 0
   ownFactionTradeBiasModifier: 0

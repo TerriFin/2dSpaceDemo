@@ -41,17 +41,14 @@ public class CargoAi : MonoBehaviour {
                 CurrentOrder = gameObject.AddComponent<FleeOrder>();
             } else if (CurrentOrder == null || repeatTimer >= repeatTradeAfterXCycles) {
                 repeatTimer = 0;
-                if (aiAttributes.AttachedShip.Cargo.CurrentMetal >= aiAttributes.AttachedShip.Cargo.GetCurrentFreeCargo() / 2) {
-                    if (CurrentOrder != null) {
-                        CurrentOrder.DestroyOrder();
-                    }
-                    
+
+                if (CurrentOrder != null) {
+                    CurrentOrder.DestroyOrder();
+                }
+
+                if (aiAttributes.AttachedShip.Cargo.CurrentMetal >= aiAttributes.AttachedShip.Cargo.maxMetal / 2) {
                     CurrentOrder = gameObject.AddComponent<CargoSellOrder>();
                 } else {
-                    if (CurrentOrder != null) {
-                        CurrentOrder.DestroyOrder();
-                    }
-
                     CurrentOrder = gameObject.AddComponent<CargoBuyOrder>();
                 }
             } 
